@@ -1,0 +1,202 @@
+:root{
+    /* 顏色定義 */
+    --black: #545454;
+    --green: #86A945;
+    --grass: #B2CA85;
+    --yellow: #FBC241;
+    --red: #DB3636;
+    --blue: #538FA1;
+    --gray: #A0A0A0;
+    --lgray: #D9D9D9;
+    --wgray: #EBEBEB;
+
+    /* 文字尺寸定義 */
+    --h1: 30px;
+    --h2: 26px;
+    --h3: 24px;
+    --h4: 22px;
+    --h5: 20px;
+    --h6: 18px;
+    --normal: 16px;
+    --small: 15px;
+    --mini: 14px;
+
+    --size_normal: 10px;
+    --size_basic: 1px;
+}
+
+/* 基本元素設定 */
+html, body{
+    font-family: 'Noto Sans TC', sans-serif;
+    color: var(--black);
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+a:link, a:visited{
+    color: var(--black);
+    text-decoration: none;
+    cursor: pointer;
+}
+a:hover, a:active{
+    color: var(--green);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*常用樣式設定*/
+h1{
+    font-size: var(--h1);
+    font-weight: 700;
+    line-height: calc(var(--size_basic)* 30);
+}
+h2{
+    font-size: var(--h2);
+    font-weight: 700;
+    line-height: calc(var(--size_basic)* 26);
+}
+h3{
+    font-size: var(--h3);
+    font-weight: 700;
+    line-height: calc(var(--size_basic)* 24);
+}
+h4{
+    font-size: var(--h4);
+    font-weight: 700;
+    line-height: calc(var(--size_basic)* 22);
+}
+h5{
+    font-size: var(--h5);
+    font-weight: 700;
+    line-height: calc(var(--size_basic)* 20);
+}
+h6{
+    font-size: var(--h6);
+    font-weight: 700;
+    line-height: calc(var(--size_basic)* 18);
+}
+p{
+    font-size: var(--normal);
+    font-weight: 400;
+    line-height: calc(var(--size_basic)*16);
+}
+small{
+    font-size: var(--small);
+    font-weight: 400;
+    line-height: calc(var(--size_basic)*15);
+}
+.text_red{
+    color: var(--red);
+}
+.text_green{
+    color: var(--green);
+}
+.text_gray{
+    color: var(--gray);
+}
+.text_black{
+    color: var(--black);
+}
+.bg_grass{
+    background-color: var(--grass) !important;
+}
+.bg_lgray{
+    background-color: var(--lgray) !important;
+}
+.text_delet{
+    text-decoration: line-through;
+    color: var(--lgray);
+}
+.text_bold{
+    font-weight: 700;
+}
+.border-bottom_green{
+    border-bottom: 0.15em solid var(--green);
+}
+.highlight_main{ 
+    border-bottom: 3px solid var(--grass);
+    font-weight: 700;
+    color: var(--green) !important;
+}
+.highlight_sub{
+    font-weight: 700;
+    color: var(--green) !important;
+}
+.highlight_page{
+    border-bottom: 2px solid var(--grass);
+    color: var(--green) !important;
+}
+
+/* 文字尺寸設定 */
+.font-size_13{
+    font-size: 13px !important;
+}
+.font-size_14{
+    font-size: var(--mini) !important;
+}
+.font-size_15{
+    font-size: var(--small) !important;
+}
+.font-size_16{
+    font-size: var(--normal) !important;
+}
+.font-size_18{
+    font-size: var(--h6) !important;
+}
+.font-size_20{
+    font-size: var(--h5) !important;
+}
+.font-size_22{
+    font-size: var(--h4) !important;
+    font-weight: 700 !important;
+    line-height: 32px;
+}
+.font-size_24{
+    font-size: var(--h3) !important;
+}
+.font-size_26{
+    font-size: var(--h2) !important;
+}
+.font-size_30{
+    font-size: var(--h1) !important;
+}
+
+/* 按鈕設定 */
+button{
+    background-color: var(--green);
+    font-size: var(--h6);
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    border: 0;
+    cursor: pointer;
+}
+button:hover, button:active{
+    background-color: var(--grass);
+    font-size: var(--h6);
+    font-weight: 700;
+    color: white;
+    text-align: center;
+}
+.button_hollow{
+    background-color: transparent;
+    color: var(--black);
+}
+.button_hollow:hover, .button_hollow:active{
+    color: var(--green);
+    background-color: transparent;
+}
+.button_blue{
+    font-family: 'Noto Sans TC';
+    color: var(--blue);
+    background-color: transparent;
+    font-size: var(--normal);
+    font-weight: 400;
+}
+.button_blue:hover, .button_blue:active{
+    color: var(--blue);
+    background-color: transparent;
+    font-size: var(--normal);
+    font-weight: 400;
+    text-decoration: underline;
+}
